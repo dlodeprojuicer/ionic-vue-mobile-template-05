@@ -32,7 +32,7 @@ npm run serve
 ```
 
 ## Design
-![Techconf-db screenshot](/design.png "Logo Title Text 1")
+![Techconf-db screenshot](/design.png "Techconf-db screenshot")
 
 ## Native
 
