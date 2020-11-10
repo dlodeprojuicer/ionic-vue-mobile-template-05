@@ -1,8 +1,9 @@
 .DS_Store
 *.DS_Store
 node_modules
-# android
-# ios
+android
+ios
+dist
 .gradle
 
 # local env files

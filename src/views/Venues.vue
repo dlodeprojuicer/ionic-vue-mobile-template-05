@@ -2,13 +2,15 @@
   <ion-page>
     <ion-content class="ion-padding">
       <h1 class="heading-h2">
-        A  concise list of tech conferences in ZA
+        A  concise list of tech conference venues in ZA
       </h1>
       <div class="lg-content-center">
-        <SearchFilters :venue="true" />
+        <SearchFilters />
         <SkeletonText v-if="loading" />
-        <ConfList :data="filteredEvents" v-if="filteredEvents.length > 0" />
-        <h2 v-if="filteredEvents.length < 1">No search results</h2>
+        <VenueList :data="filteredVenues" v-if="filteredVenues.length > 0" />
+        <h1 v-if="filteredVenues.length < 1">No search results</h1>
+        <br /><br />
+        If you wish to add a venue please email simodms@gmail.com
       </div>
     </ion-content>
     <Fab />
@@ -16,14 +18,14 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-
 import {
   IonPage,
   IonContent
 } from "@ionic/vue";
 
-import ConfList from "../components/ConfList";
+import { defineComponent } from 'vue';
+
+import VenueList from "../components/VenueList";
 import Fab from "../components/Fab";
 import SkeletonText from "../components/SkeletonText";
 import SearchFilters from "../components/SearchFilters";
@@ -37,13 +39,13 @@ export default defineComponent({
   components: {
     IonContent,
     IonPage,
-    ConfList,
+    VenueList,
     SkeletonText,
     SearchFilters,
     Fab,
   },
   computed: {
-    ...mapGetters(['events', 'filteredEvents', 'monthEventCount']),
+    ...mapGetters(['venues', 'filteredVenues', 'searchString']),
   },
   data() {
     return {
@@ -52,11 +54,10 @@ export default defineComponent({
   },
   methods: {
     ionViewDidEnter() {
-      this.fetchEvents();
+      this.fetchVenues();
     },
-    fetchEvents() {
-      this.$store.dispatch("getEvents").then(() => {
-        // this.filteredEvents = data;
+    fetchVenues() {
+      this.$store.dispatch("getVenues").then(() => {
         this.loading = false;
       }).catch(error => {
           this.loading = false;
@@ -67,6 +68,7 @@ export default defineComponent({
   },
 });
 </script>
+
 
 <style lang="scss">
 .heading-h2 {

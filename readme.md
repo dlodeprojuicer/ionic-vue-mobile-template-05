@@ -1,14 +1,25 @@
-## Ionic Vue Mobile Template 04 
-![Netlify Status](https://api.netlify.com/api/v1/badges/61a3f498-564f-4f61-a0b3-2ed99c9ab102/deploy-status)
+## Ionic Vue Mobile Template 05 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/42a32637-a563-455e-abba-58344dadeed6/deploy-status)](https://app.netlify.com/sites/ionic-vue-mobile-template-05/deploys)
 
-Hybrid mobile template built with ([latest](https://ionicframework.com/blog/announcing-the-new-ionic-vue-beta/)) vue-ionic and using capacitor for native builds - These templates are from app design inspiration pages on Instagram or Dribble.
+Hybrid mobile template built with ([latest](https://ionicframework.com/blog/announcing-the-new-ionic-vue-beta/)) ionic-vue and using capacitor for native builds.
 
-Template is inspired by the new Capitec Bank app. Capitec is one of the largest banks in South Africa. It provides personal banking services through its 1000-plus branches across the country. For this template the focus is on the general look and feel.
+Template is based on [TechConf-db.com](https://techconf-db.com), a side project of mine. Unlike other templetes, this one is not meant to be a mobile app, atleast not yet, but it is responsive and can be used as a mobile app. 
 
-[Demo](https://ionic-vue-mobile-template-04.netlify.app)
+[Demo](https://ionic-vue-mobile-template-05.netlify.app)
 
 <a href="https://www.buymeacoffee.com/simomafuxwana" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="120px" height="30px" style="height: 30px !important;width: 120px !important;" ></a>
 
+## Features
+- Vuex
+- Firebase
+- Mailchimp
+- Search Filter
+- Responsive
+
+## Configs
+For the purpose of this template I created a static data. Techconf-db is using a Firebase backend. Replace Firebase config in `src/firebase.js` or remove Firebase completely to use your prefer your a different backend.
+
+Also, make sure you replace mailchimp config url on line 123 of `src/components/Subscription.vue`
 
 ## Project setup
 ```
@@ -21,7 +32,7 @@ npm run serve
 ```
 
 ## Design
-![alt text](/design.png "Logo Title Text 1")
+![Techconf-db screenshot](/design.png "Logo Title Text 1")
 
 ## Native
 
@@ -53,9 +64,6 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 - [Getting started](https://ionicframework.com/docs/vue/quickstart)
 - [Changelog](https://github.com/ionic-team/ionic-framework/blob/master/CHANGELOG.md)
 
-## Credits
-- [Tami Maiwashe](https://www.linkedin.com/in/tami-maiwashe-32824a19a/) - Documentation
-- [おかきょー](https://twitter.com/31415O_Kyo) - [Japanese doc translation](https://github.com/dlodeprojuicer/ionic-vue-mobile-template-01/blob/master/readme-ja.md)
-
 ## Contact
 - [@dlodeprojuicer](https://twitter.com/dlodeprojuicer) on Twitter
+- [@IonicSA](https://twitter.com/ionicsa) - S.A ionic user group page

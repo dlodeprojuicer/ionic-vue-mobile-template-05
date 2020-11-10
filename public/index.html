@@ -2,26 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Ionic Vue Mobile Template 04</title>
+    <title>TechConf-db | A concise list of tech conferences in South Africa</title>
 
     <base href="/" />
 
     <meta name="color-scheme" content="light dark" />
-    <meta
-      name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <meta name="description" content="Find all the is to know about tech conferences, venues and speakers in South Africa. Techconf-db has 2 goals. For attendees, a noise-free event list with up to date information. For organizers, an information hub for things related to organizing a tech conference.">
+    <meta name="keywords" content="conferences, meetups, za tech, tech conferences, south africa">
+    <meta name="author" content="Simo Mafuxwana | @dlodeprojuicer">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary"></meta>
+    <meta name="twitter:site" content="@dlodeprojuicer" />
+    <meta name="twitter:creator" content="@dlodeprojuicer" />
+    <meta name="twitter:title" content="TechConf-db | A concise list of tech conferences in South Africa" />
+    <meta name="twitter:description" content="Find all the is to know about tech conferences, venues and speakers in South Africa. Techconf-db has 2 goals. For attendees, a noise-free event list with up to date information. For organizers, an information hub for things related to organizing a tech conference." />
+    <meta name="twitter:image" content="./assets/img/no-events.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TechConf-db | A concise list of tech conferences in South Africa" />
+    <meta property="og:description" content="Find all the is to know about tech conferences, venues and speakers in South Africa. Techconf-db has 2 goals. For attendees, a noise-free event list with up to date information. For organizers, an information hub for things related to organizing a tech conference." />
+    <meta property="og:image" content="https://techconf-db.com/assets/img/no-events.png" />
+    <meta property="og:url" content="https://techconf-db.com/" />
+
+    <!-- SEO https://ahrefs.com verification -->
+    <meta name="ahrefs-site-verification" content="8cc3fe0a1f1c9f9e7578ef2b248f137e15b115db4a7e67a63e564d012e01c906">
+
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
 
-    <link rel="manifest" href="<%= BASE_URL %>/manifest.json" />
+    <!-- <link rel="manifest" href="<%= BASE_URL %>/manifest.json" /> -->
 
-    <link rel="shortcut icon" type="image/png" href="<%= BASE_URL %>/assets/icon/favicon.png" />
+    <!-- Favicon Maker: https://formito.com/tools/favicon?ref=producthunt -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23144d75%22></rect><path fill=%22%23fff%22 d=%22M25.20 23.36L32.42 23.36L32.42 33.59L40.31 33.59L40.31 39.18L32.42 39.18L32.42 65.39Q32.42 67.93 33.48 69.20Q34.53 70.47 37.07 70.47L37.07 70.47Q38.32 70.47 40.51 70L40.51 70L40.51 75.86Q37.66 76.64 34.96 76.64L34.96 76.64Q30.12 76.64 27.66 73.71Q25.20 70.78 25.20 65.39L25.20 65.39L25.20 39.18L17.50 39.18L17.50 33.59L25.20 33.59L25.20 23.36ZM65.70 70.74L65.70 70.74Q69.57 70.74 72.46 68.40Q75.35 66.05 75.66 62.54L75.66 62.54L82.50 62.54Q82.30 66.17 80 69.45Q77.70 72.73 73.85 74.69Q70 76.64 65.70 76.64L65.70 76.64Q57.07 76.64 51.97 70.88Q46.88 65.12 46.88 55.12L46.88 55.12L46.88 53.91Q46.88 47.73 49.14 42.93Q51.41 38.13 55.64 35.47Q59.88 32.81 65.66 32.81L65.66 32.81Q72.77 32.81 77.48 37.07Q82.19 41.33 82.50 48.13L82.50 48.13L75.66 48.13Q75.35 44.02 72.56 41.39Q69.77 38.75 65.66 38.75L65.66 38.75Q60.16 38.75 57.13 42.71Q54.10 46.68 54.10 54.18L54.10 54.18L54.10 55.55Q54.10 62.85 57.11 66.80Q60.12 70.74 65.70 70.74Z%22></path></svg>" />
 
     <!-- add to homescreen for ios -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="IVMT 1" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    
+    <!-- Mailchimp -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+    <!-- Google Calendar -->
+    <script async defer src="https://apis.google.com/js/api.js"></script>
   </head>
 
   <body>

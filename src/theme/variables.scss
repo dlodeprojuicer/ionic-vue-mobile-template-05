@@ -3,6 +3,10 @@ http://ionicframework.com/docs/theming/ */
 
 @import "./media-queries.scss";
 
+$baseColor: #181819;
+
+// $colors: (success, #000);
+
 :root {
   --ion-color-primary: #355724;
   --ion-color-primary-tint: #19ce4f;
@@ -21,4 +25,17 @@ http://ionicframework.com/docs/theming/ */
 h1 , h2 , h3 , h4 , p , a , ul li , strong , label {
   color: #777777;
 }
+
+ion-toolbar.modal-header {
+  --background: #144d75;
+
+  ion-title {
+    color: #fff;
+  }
+}
+
+.form-buttons {
+  margin: 50px auto;
+}
+
 
