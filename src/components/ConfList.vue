@@ -50,8 +50,8 @@ import { chevronForward, micOutline, heartOutline, openOutline, calendarClearOut
 import EditEventModal from "./EditEventModal";
 
 const gapi = window.gapi;
-const CLIENT_ID = "85418644814-d23l8dcdabf5tdfb7a4g4sbb7u3firs1.apps.googleusercontent.com";
-const API_KEY = "AIzaSyA3LPByxDChFePmbkhK7EUIVr8o4b37U3s";
+const CLIENT_ID = "<YOUR_CLIENT_ID>";
+const API_KEY = "<YOUR_API_KEY";
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
 const SCOPES = "https://www.googleapis.com/auth/calendar";
 
