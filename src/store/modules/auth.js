@@ -1,10 +1,4 @@
-// import mailchimp from "@mailchimp/mailchimp_marketing";
 import firebase from "./../../firebase";
-
-// mailchimp.setConfig({
-//   apiKey: "bfe135ec5d510567a5e6e2be6557849c-us2",
-//   server: "us2",
-// });
 
 const addToSpeakers = (speaker) => {
   let speakerObj = {
